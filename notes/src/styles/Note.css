@@ -1,0 +1,39 @@
+.allNotes {
+  display: flex;
+  justify-content: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 12px;
+}
+
+.noteTitle {
+  font-size: 22px;
+  font-weight: bold;
+  color: black;
+  border-bottom: 2px solid lightgrey;
+  padding-bottom: 0px;
+  overflow: hidden;
+  height: 31px;
+  line-height: 30px;
+}
+
+.noteBody {
+  font-size: 14px;
+  color: #4a494a;
+  letter-spacing: 1px;
+  line-height: 29px;
+  height: 150px;
+  margin-top: 7px;
+}
+
+.noteCard {
+  background: #ffffff;
+  box-sizing: border-box;
+  border: 2px solid lightgrey;
+  width: 400px;
+  height: 235px;
+  margin-bottom: 20px;
+  margin-left: 18px;
+  padding: 13px 20px 20px 20px;
+  overflow: hidden;
+}
