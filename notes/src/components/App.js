@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../styles/App.css';
 import NoteList from './NoteList';
+import CreateNote from './CreateNote';
 import Header from './Header'
 import { Switch, Route } from 'react-router-dom';
 

@@ -11,16 +11,14 @@ class CreateNote extends Component {
   render() {
     return (
       <div>
-        <div className="flex flex-column mt3">
+        <div>
           <input
-            className="mb2"
             value={this.state.title}
             onChange={e => this.setState({ title: e.target.value })}
             type="text"
             placeholder="Title"
           />
           <input
-            className="mb2"
             value={this.state.content}
             onChange={e => this.setState({ content: e.target.value })}
             type="text"
@@ -33,7 +31,7 @@ class CreateNote extends Component {
   }
 
   _createNote = async () => {
-    const { title, content } = this.state
+    const { title, content } = this.state;
     await this.props.postMutation({
       variables: {
         title,
@@ -47,8 +45,6 @@ class CreateNote extends Component {
 const POST_MUTATION = gql`
   mutation PostMutation($title: String!, $content: String!) {
     post(title: $title, content: $content) {
-      id
-      createdAt
       title
       content
     }

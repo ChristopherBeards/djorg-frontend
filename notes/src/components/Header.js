@@ -5,15 +5,15 @@ import { withRouter } from 'react-router';
 class Header extends Component {
   render() {
     return (
-      <div className="flex pa1 justify-between nowrap orange">
-        <div className="flex flex-fixed black">
-          <div className="fw7 mr1">Django-Apollo Notes</div>
-          <Link to="/" className="ml1 no-underline black">
-            new
+      <div>
+        <div>
+          <div>Django-Apollo Notes</div>
+          <Link to="/">
+            Notes
           </Link>
-          <div className="ml1">|</div>
-          <Link to="/create" className="ml1 no-underline black">
-            submit
+          <div>|</div>
+          <Link to="/create">
+            Create
           </Link>
         </div>
       </div>
